@@ -204,14 +204,19 @@ Image *rgb2gray(Image *img) {
     return gray_image;
 }
 
-Image *Sobel(Image *img) {
+Image *Sobel(Image *gray_image) {
+
+    if(gray_image->channels > 1 ){
+        perror("Image must be in gray scale\n");
+        exit(1);
+    }
+
     const float GX[9] = {-1, 0, 1, -2, 0, 2, -1, 0, 1};
     const float GY[9] = {-1, -2, -1, 0, 0, 0, 1, 2, 1};
 
-    Image *gray_image = rgb2gray(img);
     Image *sobel_image = createImg(gray_image->width, gray_image->height, 1);
 
-    size_t size_image = img->height * img->width * sizeof(stbi_uc);
+    size_t size_image = gray_image->height * gray_image->width * sizeof(stbi_uc);
 
     stbi_uc *d_sobelImage, *d_grayImage, *d_GXImage, *d_GYImage;
 
@@ -225,7 +230,7 @@ Image *Sobel(Image *img) {
     cudaMemcpyToSymbol(d_GY, GY, 9*sizeof(float));
     
     dim3 threadsPerBlock(THREADS, THREADS);
-    dim3 blocks((img->width + threadsPerBlock.x - 1) / threadsPerBlock.x, (img->height + threadsPerBlock.y - 1) / threadsPerBlock.y);
+    dim3 blocks((gray_image->width + threadsPerBlock.x - 1) / threadsPerBlock.x, (gray_image->height + threadsPerBlock.y - 1) / threadsPerBlock.y);
     int sharedMemSize = (THREADS + 6) * (THREADS + 6) * 4 * sizeof(float);
 
     // --- Medir tiempo
@@ -234,7 +239,7 @@ Image *Sobel(Image *img) {
     cudaEventCreate(&stop);
     cudaEventRecord(start);
 
-    Sobel_kernel<<<blocks, threadsPerBlock, sharedMemSize>>>(d_sobelImage, d_grayImage, d_GXImage, d_GYImage, img->width, img->height);
+    Sobel_kernel<<<blocks, threadsPerBlock, sharedMemSize>>>(d_sobelImage, d_grayImage, d_GXImage, d_GYImage, gray_image->width, gray_image->height);
     cudaEventRecord(stop);
     cudaEventSynchronize(stop);
 
@@ -247,7 +252,6 @@ Image *Sobel(Image *img) {
     cudaFree(d_GXImage);
     cudaFree(d_GYImage);
     cudaFree(d_sobelImage);
-    freeImage(gray_image);
 
     cudaEventDestroy(start);
     cudaEventDestroy(stop);

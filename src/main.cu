@@ -15,9 +15,9 @@ int main(int argc, char **argv){
     char *filename_out_gaussian = argv[4];
 
     Image *img = image2arr(filename_in);
-    Image *sobel = Sobel(img);
-    Image *gaussian = GaussianBlur(img, 9, 10.0f);
     Image *gray = rgb2gray(img);
+    Image *sobel = Sobel(gray);
+    Image *gaussian = GaussianBlur(img, 9, 10.0f);
 
     saveImg(gaussian, filename_out_gaussian);
     saveImg(gray, filename_out_gray);

@@ -1,20 +1,16 @@
-[Kernel rgb2gray] Tiempo de ejecución: 0.408608 ms
-[Kernel Sobel] Tiempo de ejecución: 0.204800 ms
-[Kernel GaussianBlur] Tiempo de ejecución: 0.823200 ms
-[Kernel rgb2gray] Tiempo de ejecución: 0.034400 ms
+[Kernel rgb2gray] Tiempo de ejecución: 0.383520 ms
+[Kernel Sobel] Tiempo de ejecución: 0.181248 ms
+[Kernel GaussianBlur] Tiempo de ejecución: 0.828576 ms
 ------------------------------------------------------
-[Kernel rgb2gray] Tiempo de ejecución: 0.352352 ms
-[Kernel Sobel] Tiempo de ejecución: 0.636928 ms
-[Kernel GaussianBlur] Tiempo de ejecución: 3.206304 ms
-[Kernel rgb2gray] Tiempo de ejecución: 0.114528 ms
+[Kernel rgb2gray] Tiempo de ejecución: 0.345376 ms
+[Kernel Sobel] Tiempo de ejecución: 0.633504 ms
+[Kernel GaussianBlur] Tiempo de ejecución: 3.208192 ms
 ------------------------------------------------------
-[Kernel rgb2gray] Tiempo de ejecución: 0.562304 ms
-[Kernel Sobel] Tiempo de ejecución: 1.413824 ms
-[Kernel GaussianBlur] Tiempo de ejecución: 8.404992 ms
-[Kernel rgb2gray] Tiempo de ejecución: 0.313408 ms
+[Kernel rgb2gray] Tiempo de ejecución: 0.533984 ms
+[Kernel Sobel] Tiempo de ejecución: 1.403904 ms
+[Kernel GaussianBlur] Tiempo de ejecución: 7.196672 ms
 ------------------------------------------------------
-[Kernel rgb2gray] Tiempo de ejecución: 0.868096 ms
-[Kernel Sobel] Tiempo de ejecución: 3.021824 ms
-[Kernel GaussianBlur] Tiempo de ejecución: 15.460672 ms
-[Kernel rgb2gray] Tiempo de ejecución: 0.472928 ms
+[Kernel rgb2gray] Tiempo de ejecución: 0.798560 ms
+[Kernel Sobel] Tiempo de ejecución: 2.487136 ms
+[Kernel GaussianBlur] Tiempo de ejecución: 12.776448 ms
 ------------------------------------------------------
