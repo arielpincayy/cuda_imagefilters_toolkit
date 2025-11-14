@@ -1,16 +1,16 @@
-[Kernel rgb2gray] Tiempo de ejecución: 0.383520 ms
-[Kernel Sobel] Tiempo de ejecución: 0.181248 ms
-[Kernel GaussianBlur] Tiempo de ejecución: 0.828576 ms
+[GPU CUDA rgb2gray] Tiempo de ejecución: 0.381792 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 0.182272 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 0.827392 ms
 ------------------------------------------------------
-[Kernel rgb2gray] Tiempo de ejecución: 0.345376 ms
-[Kernel Sobel] Tiempo de ejecución: 0.633504 ms
-[Kernel GaussianBlur] Tiempo de ejecución: 3.208192 ms
+[GPU CUDA rgb2gray] Tiempo de ejecución: 0.339936 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 0.637952 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 3.208192 ms
 ------------------------------------------------------
-[Kernel rgb2gray] Tiempo de ejecución: 0.533984 ms
-[Kernel Sobel] Tiempo de ejecución: 1.403904 ms
-[Kernel GaussianBlur] Tiempo de ejecución: 7.196672 ms
+[GPU CUDA rgb2gray] Tiempo de ejecución: 0.542304 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 1.405952 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 7.194912 ms
 ------------------------------------------------------
-[Kernel rgb2gray] Tiempo de ejecución: 0.798560 ms
-[Kernel Sobel] Tiempo de ejecución: 2.487136 ms
-[Kernel GaussianBlur] Tiempo de ejecución: 12.776448 ms
+[GPU CUDA rgb2gray] Tiempo de ejecución: 0.799008 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 2.495264 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 12.781568 ms
 ------------------------------------------------------

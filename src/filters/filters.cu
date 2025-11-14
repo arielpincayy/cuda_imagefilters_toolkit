@@ -192,7 +192,7 @@ Image *rgb2gray(Image *img) {
 
     float milliseconds = 0;
     cudaEventElapsedTime(&milliseconds, start, stop);
-    printf("[Kernel rgb2gray] Tiempo de ejecución: %f ms\n", milliseconds);
+    printf("[GPU CUDA rgb2gray] Tiempo de ejecución: %f ms\n", milliseconds);
 
     cudaMemcpy(gray_image->data, gray_image_d, gray_image->height * gray_image->width * sizeof(stbi_uc), cudaMemcpyDeviceToHost);
     cudaFree(gray_image_d);
@@ -245,7 +245,7 @@ Image *Sobel(Image *gray_image) {
 
     float milliseconds = 0;
     cudaEventElapsedTime(&milliseconds, start, stop);
-    printf("[Kernel Sobel] Tiempo de ejecución: %f ms\n", milliseconds);
+    printf("[GPU CUDA Sobel] Tiempo de ejecución: %f ms\n", milliseconds);
 
     cudaMemcpy(sobel_image->data, d_sobelImage, size_image, cudaMemcpyDeviceToHost);
     cudaFree(d_grayImage);
@@ -287,7 +287,7 @@ Image *GaussianBlur(Image *img, int kernel_dim, float stdev) {
 
     float milliseconds = 0;
     cudaEventElapsedTime(&milliseconds, start, stop);
-    printf("[Kernel GaussianBlur] Tiempo de ejecución: %f ms\n", milliseconds);
+    printf("[GPU CUDA GaussianBlur] Tiempo de ejecución: %f ms\n", milliseconds);
 
     cudaMemcpy(blurerImg->data, d_blurerData, sizeof(stbi_uc) * blurerImg->width * blurerImg->height * blurerImg->channels, cudaMemcpyDeviceToHost);
     cudaFree(d_data);
