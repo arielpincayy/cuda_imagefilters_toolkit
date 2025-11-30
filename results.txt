@@ -1,16 +1,28 @@
-[GPU CUDA rgb2gray] Tiempo de ejecución: 0.381792 ms
-[GPU CUDA Sobel] Tiempo de ejecución: 0.182272 ms
-[GPU CUDA GaussianBlur] Tiempo de ejecución: 0.827392 ms
+[GPU CUDA rgb2gray] Tiempo de ejecución: 0.461056 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 0.037760 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 0.078848 ms
 ------------------------------------------------------
-[GPU CUDA rgb2gray] Tiempo de ejecución: 0.339936 ms
-[GPU CUDA Sobel] Tiempo de ejecución: 0.637952 ms
-[GPU CUDA GaussianBlur] Tiempo de ejecución: 3.208192 ms
+[GPU CUDA rgb2gray] Tiempo de ejecución: 0.299328 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 0.227232 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 1.105920 ms
 ------------------------------------------------------
-[GPU CUDA rgb2gray] Tiempo de ejecución: 0.542304 ms
-[GPU CUDA Sobel] Tiempo de ejecución: 1.405952 ms
-[GPU CUDA GaussianBlur] Tiempo de ejecución: 7.194912 ms
+[GPU CUDA rgb2gray] Tiempo de ejecución: 0.416672 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 0.847872 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 4.361216 ms
 ------------------------------------------------------
-[GPU CUDA rgb2gray] Tiempo de ejecución: 0.799008 ms
-[GPU CUDA Sobel] Tiempo de ejecución: 2.495264 ms
-[GPU CUDA GaussianBlur] Tiempo de ejecución: 12.781568 ms
+[GPU CUDA rgb2gray] Tiempo de ejecución: 0.724416 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 1.862400 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 9.753184 ms
+------------------------------------------------------
+[GPU CUDA rgb2gray] Tiempo de ejecución: 0.983808 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 3.354752 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 17.302528 ms
+------------------------------------------------------
+[GPU CUDA rgb2gray] Tiempo de ejecución: 1.307648 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 5.143552 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 27.020288 ms
+------------------------------------------------------
+[GPU CUDA rgb2gray] Tiempo de ejecución: 1.692352 ms
+[GPU CUDA Sobel] Tiempo de ejecución: 7.397376 ms
+[GPU CUDA GaussianBlur] Tiempo de ejecución: 38.918816 ms
 ------------------------------------------------------

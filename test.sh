@@ -6,7 +6,7 @@ mkdir -p "$DATA_DIR/gray" "$DATA_DIR/sobel" "$DATA_DIR/gaussian"
 touch $RESULTS
 > $RESULTS
 
-for file in data/originals/*; do
+for file in $(ls data/originals/* | sort -t _ -k2.2n); do
     filename=$(basename "$file")
     
     gray_path="$DATA_DIR/gray/$filename"
